@@ -8,6 +8,7 @@ export default interface User {
 
 export interface Post {
   author: User;
+  title: string;
   content: string;
   post_id: number;
   timestamp: string;
