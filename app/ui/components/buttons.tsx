@@ -1,5 +1,9 @@
 import Link from 'next/link';
+
 export function BlueButton({value}:{value:string}) {
+  const handleClick = () => {
+    console.log("Button clicked");
+  };
     return (
       <button type="submit" className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300 ease-in-out">
         {value}
@@ -20,4 +24,16 @@ export function GreenButton({value, href}:{value:string; href:string}) {
       {value}
     </Link>
   );
+}
+
+export function SideNavButton({value, href}:{value:string; href:string}) {
+  return (
+    <Link
+      href = {href}
+      className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300 ease-in-out"
+    >
+      {value}
+    </Link>
+  );
+
 }

@@ -18,7 +18,7 @@ export default function SignUpForm() {
           <input type="password" placeholder="Password" className="border border-zinc-200 rounded-lg px-4 py-2"/>
           <PwdInput/>
           {/* will be implemented in the next section */}
-          <Link href='/'>
+          <Link href='/home'>
           <BlueButton value="Sign Up"/>
           </Link>
         </form>
