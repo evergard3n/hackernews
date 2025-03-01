@@ -1,7 +1,7 @@
 import Link from "next/link";
 import AcmeLogo from "../../logo";
 import NavLinks from "./navlinks";
-
+import LogInStatus from "./loginStatus";
 
 
 export default function SideNav() {
@@ -10,9 +10,10 @@ export default function SideNav() {
       <div className="w-11/12 h-24 rounded-lg bg-amber-500 mt-4 text-white flex items-center justify-center">
         <AcmeLogo />
       </div>
-      <div className="w-11/12 mt-4 flex flex-col gap-4">
+      <div className="w-11/12 mt-4 flex flex-col gap-4 grow">
         <NavLinks/>
       </div>
+      <LogInStatus/>
     </div>
   );
 }

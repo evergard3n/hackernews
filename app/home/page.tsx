@@ -12,7 +12,7 @@ export default function HomePage() {
             
             <NewPost/>
             
-            <PostsList posts={listposts}/>
+            <PostsList/>
         </div>
     )
 }

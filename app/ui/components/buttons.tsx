@@ -1,9 +1,6 @@
 import Link from 'next/link';
 
 export function BlueButton({value}:{value:string}) {
-  const handleClick = () => {
-    console.log("Button clicked");
-  };
     return (
       <button type="submit" className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300 ease-in-out">
         {value}
